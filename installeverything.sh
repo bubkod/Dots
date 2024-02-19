@@ -3,7 +3,6 @@ mkdir -p ~/.config/alacritty
 mkdir -p ~/.config/nvim
 
 cp -r ./.config ~/
-cp -r ./.bashrc ~/.bashrc
 # These two will install some fonts to make FireFox and other apps work betterer (Most fonts by Microsoft atm).
 cp -r ./.fonts ~/.fonts
 
