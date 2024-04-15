@@ -1,0 +1,8 @@
+[Unit]
+Description=Hanime coins script.
+
+[Service]
+ExecStart=/home/elron/git/hanime-auto-coins-plus/forloophentaiscript.sh
+
+[Install]
+WantedBy=multi-user.target

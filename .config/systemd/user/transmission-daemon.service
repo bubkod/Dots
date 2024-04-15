@@ -1,0 +1,14 @@
+[Unit]
+Description = Torrent Daemon
+
+[Service]
+ExecStart = /usr/bin/transmission-daemon -f --config-dir /var/lib/transmission-daemon/info
+Restart = always
+RestartSec = 240
+IOSchedulingClass = best-effort
+IOSchedulingPriority = 7
+Nice = 10
+CPUSchedulingPolicy = idle
+
+[Install]
+WantedBy = multi-user.target
