@@ -21,7 +21,7 @@ call plug#end()
 
 
 " Color Scheme
-colorscheme gruvbox
+colorscheme archery
 " MEGA IMPORTANT FOR TERMINAL TRANSPARENCY
 hi Normal guibg=NONE ctermbg=NONE
 
@@ -32,7 +32,7 @@ set relativenumber
 set encoding=UTF-8
 set laststatus=2
 set t_Co=256
-
+set clipboard+=unnamedplus
 
 
 " Plugin Options
