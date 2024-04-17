@@ -213,3 +213,6 @@ smart_borders on
 
 
 focus_follows_mouse no
+
+# Make tor floating on launch
+for_window [class="Tor Browser"] floating enable
