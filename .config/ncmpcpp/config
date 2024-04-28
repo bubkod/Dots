@@ -1,0 +1,58 @@
+mpd_host = "127.0.0.1"
+mpd_port = "6601"
+mpd_music_dir = "/media/BigBoyDisk/Entertainment/Music"
+default_place_to_search_in = "database"
+
+lyrics_directory ~/.local/share/mpd/.lyrics
+follow_now_playing_lyrics = "yes"
+
+## Interface
+user_interface = "alternative"
+autocenter_mode = "yes"
+playlist_editor_display_mode = "columns"
+search_engine_display_mode = "columns"
+browser_display_mode = "columns"
+playlist_display_mode = "columns"
+progressbar_look = "󰝤󰨕󰇘"
+now_playing_prefix = " "
+centered_cursor = "yes"
+
+current_item_prefix = "$(blue)$r"
+current_item_suffix = "$/r(end)"
+current_item_inactive_column_prefix = "$(cyan)$r"
+
+song_columns_list_format = "(10)[blue]{l} (40)[blue]{t} (25)[cyan]{a} (25)[cyan]{b}"
+song_list_format = "{$7%a - $9}|{$5%t$9}|{$5%f$9}$R{$6%b $9}{$3%l$9}"
+
+alternative_header_first_line_format = "$0$aqqu$/a {$6%a$9 - }{$3%t$9}|{$3%f$9} $0$atqq$/a$9"
+alternative_header_second_line_format = "{{$4%b$9}{ [$8%y$9]}}|{$4%D$9}"
+
+colors_enabled = "yes"
+main_window_color = "blue"
+header_window_color = "blue"
+volume_color "red"
+statusbar_color "green"
+progressbar_color = "blue"
+progressbar_elapsed_color = "cyan"
+
+
+## Visualizer
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "Visualizer thing"
+visualizer_sync_interval = "60"
+visualizer_type = "spectrum"
+visualizer_in_stereo = "yes"
+visualizer_look = "◆▋"
+visualizer_color = blue, cyan, green, yellow, magenta, red
+visualizer_spectrum_dft_size = 2
+visualizer_fps = 30
+visualizer_spectrum_smooth_look = no
+
+
+## Other
+cyclic_scrolling = "yes"
+header_text_scrolling = "yes"
+jump_to_now_playing_song_at_start = "yes"
+lines_scrolled = "1"
+incremental_seeking = "yes"
+seek_time = "1"
